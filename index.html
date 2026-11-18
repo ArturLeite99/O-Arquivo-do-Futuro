@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O Arquivo do Futuro</title>
+
+    <!-- Biblioteca A-Frame -->
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+
+    <!-- Ficheiro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a-scene>
+
+        <!-- Céu -->
+        <a-sky color="#D8D8D8"></a-sky>
+
+        <!-- Chão -->
+        <a-plane
+            position="0 0 0"
+            rotation="-90 0 0"
+            width="20"
+            height="20"
+            color="#777777">
+        </a-plane>
+
+        <!-- Câmara do utilizador -->
+        <a-camera position="0 1.6 4">
+            <a-cursor color="black"></a-cursor>
+        </a-camera>
+
+        <!-- Iluminação -->
+        <a-light
+            type="ambient"
+            color="#FFFFFF"
+            intensity="1">
+        </a-light>
+
+        <a-light
+            type="directional"
+            position="2 4 3"
+            intensity="0.8">
+        </a-light>
+
+    </a-scene>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
